@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+<body>
+
+<a href="{% url 'about' %}">About page</a>
+
+<h1>The Mighty Wordcounter</h1>
+<br/>
+<br/>
+
+<form action="{% url 'count' %}" method="get">
+    Please insert your text:
+    <br/>
+    <textarea name="ourtext" rows="5" cols="33"></textarea>
+    <br/>
+    <div class="button">
+        <button type="submit">Send</button>
+    </div>
+</form>
+</body>
+</html>

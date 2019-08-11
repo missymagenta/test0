@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResultsPage</title>
+</head>
+<body>
+<h1>Results page</h1>
+
+<br />
+<br />
+
+<h3>You entered this text:</h3>
+<br />
+{{ data }}
+
+<br />
+<br />
+
+<h3>Your text is {{ count }} words long!</h3>
+
+<br />
+<br />
+
+<h3>Your single word counter is:</h3>
+<br />
+{% for item,count in new_list %}
+<br />
+{{ item }} - {{ count }}
+<br />
+{% endfor %}
+</body>
+</html>
